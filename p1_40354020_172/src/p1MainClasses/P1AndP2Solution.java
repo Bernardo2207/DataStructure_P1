@@ -1,4 +1,4 @@
-
+package p1MainClasses;
 import interfaces.MySet;
 import setIntersectionFinders.AbstractIntersectionFinder;
 
