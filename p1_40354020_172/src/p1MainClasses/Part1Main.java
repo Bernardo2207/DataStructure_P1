@@ -39,9 +39,44 @@ public class Part1Main {
 			theSet[j]=theUnion;
 		}
 		System.out.println(theSet);
-		P3Solution p1= new P3Solution("P2");
-		p1.intersectSets(theSet);
-		System.out.println(p1.intersectSets(theSet));
+		//-----------------Make p1 and p2,p3 and p4 solutions----------------------
+		P1AndP2Solution P1orP2; 
+		P3Solution p3 = new P3Solution("P3");
+		P4Solution p4 = new P4Solution("P4");
+		
+		//making an integer that has the integer value of the arg[o] given in command line
+		Integer n = Integer.parseInt(args[0]);
+		switch(n){
+		case 1:
+			//sysout for testing purpose
+			System.out.println("Execute p1");
+			P1orP2 = new P1AndP2Solution("P1");
+			P1orP2.intersectSets(theSet);
+			break;
+		case 2:
+			System.out.println("Execute p2 ");
+			P1orP2 = new P1AndP2Solution("P2");
+			P1orP2.intersectSets(theSet);
+			break;
+		case 3:
+			System.out.println("Execute p3");
+			p3.intersectSets(theSet);
+			break;
+			
+		case 4:
+			System.out.println("Execute p4");
+			p4.intersectSets(theSet);
+			break;
+			
+		default:
+			System.out.println("Deffault");
+			P1orP2 = new P1AndP2Solution("P1");
+			P1orP2.intersectSets(theSet);
+			
+			P1orP2 = new P1AndP2Solution("P2");
+			P1orP2.intersectSets(theSet);
+			break;
+		}
 		
 		//p1.intersectSets(theSet);
 //		DataGenerator dg = new DataGenerator(n, m, totalSize);
