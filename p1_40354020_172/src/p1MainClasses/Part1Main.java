@@ -10,11 +10,11 @@ import mySetImplementations.Set2;
 
 public class Part1Main {
 
-
-static int totalSize = 200; 
-static int n = 20, m = 10; 
-static Set1<Integer> theSet1=new Set1<>();
-static Set2<Integer> theSet2=new Set2<>();
+//
+//static int totalSize = 200; 
+//static int n = 20, m = 10; 
+//static Set1<Integer> theSet1=new Set1<>();
+//static Set2<Integer> theSet2=new Set2<>();
 
 	public static void main(String[] args) throws FileNotFoundException {
 		//n es el numero de companys
@@ -27,10 +27,10 @@ static Set2<Integer> theSet2=new Set2<>();
 		
 		MySet<Integer>[] theSet= new MySet[rd.getM()];
 		
-		Set1<Integer> theUnion;
+		MySet<Integer> theUnion;
 		
 		for(int j=0;j<fData[0].length;j++) {
-			theUnion= new Set1<Integer>();
+			theUnion= new Set2<Integer>();
 			for(int i=0;i<fData.length;i++) {
 				for(int k=0;k<fData[i][j].length;k++) {
 					theUnion.add(fData[i][j][k]);
@@ -39,7 +39,9 @@ static Set2<Integer> theSet2=new Set2<>();
 			theSet[j]=theUnion;
 		}
 		System.out.println(theSet);
-		P1AndP2Solution p1= new P1AndP2Solution("P1");
+		P3Solution p1= new P3Solution("P2");
+		p1.intersectSets(theSet);
+		System.out.println(p1.intersectSets(theSet));
 		
 		//p1.intersectSets(theSet);
 //		DataGenerator dg = new DataGenerator(n, m, totalSize);
@@ -77,16 +79,16 @@ static Set2<Integer> theSet2=new Set2<>();
 //		}
 			}
 	//
-	public static void save(Integer[] t) {
-		for(int i=0;i<t.length;i++) {
-			if(!(theSet1.contains(t[i]))) {
-			theSet1.add(t[i]);
-			}
-			if(!(theSet2.contains(t[i]))) {
-				theSet2.add(t[i]);
-				}
-		}
-	}
+//	public static void save(Integer[] t) {
+//		for(int i=0;i<t.length;i++) {
+//			if(!(theSet1.contains(t[i]))) {
+//			theSet1.add(t[i]);
+//			}
+//			if(!(theSet2.contains(t[i]))) {
+//				theSet2.add(t[i]);
+//				}
+//		}
+//	}
 	
 //	public static void print(Integer[] t) {
 //		for(int i=0;i<t.length;i++)
