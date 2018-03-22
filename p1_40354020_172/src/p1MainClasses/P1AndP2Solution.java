@@ -18,47 +18,20 @@ public class P1AndP2Solution<E> extends AbstractIntersectionFinder<E> {
 		// TODO Auto-generated method stub
 		//Part1Main.list
 		
-		  if (this.getName() == "P1") {
-              Set1<Integer> setOne = (Set1<Integer>) t[0];
-              for(int i=1; i<t.length; i++) {
-                      for(Integer e: setOne) {
-                              if(!(t[i].contains((E) e))) {
-                                      setOne.remove(e);
-                              }
-
-                      }
-
-              }
-              return (MySet<E>) setOne;
-
-      }
-
-      if(this.getName() == "P2") {
-
-              Set2<Integer> setTwo = (Set2<Integer>) t[0];
-
-              for(int j=1; j<t.length; j++) {
-
-                      for(Integer s: setTwo) {
-
-                              if(!(t[j].contains((E) s))) {
-
-                                      setTwo.remove(s);
-
-                              }
-
-                      }
-
-              }
-
-              return (MySet<E>) setTwo;
-
-      }
-
-      
-
-      return null;
-
+		MySet<E> testSet;
+				if(this.getName() == "P1")
+					testSet = new Set1<E>();
+				else if(this.getName() == "P2")
+					testSet = new Set2<E>();
+				testSet = t[0];
+				for(int i = 1; i < t.length; i++){
+					for(E e: testSet){
+						if(!(t[i].contains((E) e))){
+							testSet.remove(e);
+						}
+					}
+				}
+		      return testSet;
 }
 		
 		
