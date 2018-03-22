@@ -65,5 +65,5 @@ public class DataReader {
 		System.out.println(); 
 	}
 
-
+ public int getM() {return m;}
 }

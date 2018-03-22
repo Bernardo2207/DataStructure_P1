@@ -1,5 +1,6 @@
 package p1MainClasses;
 import interfaces.MySet;
+import mySetImplementations.Set1;
 import setIntersectionFinders.AbstractIntersectionFinder;
 
 public class P1AndP2Solution<E> extends AbstractIntersectionFinder<E> {
@@ -12,6 +13,10 @@ public class P1AndP2Solution<E> extends AbstractIntersectionFinder<E> {
 	@Override
 	public MySet<E> intersectSets(MySet<E>[] t) {
 		// TODO Auto-generated method stub
+		//Part1Main.list
+		//MySet<E> problematicos= new MySet<E>;
+		
+		
 		return null;
 	}
 
