@@ -97,8 +97,13 @@ public class ExperimentController{
 					// no need to clone the data set to be used by each strategy since
 					// no modification of it is done in the process...
 					long startTime = System.nanoTime(); // System.currentTimeMillis();   // time before
-
-					strategy.runTrial(theSet1);   // run the particular strategy...
+					if (strategy.getStrategyName() == "P1"){
+					strategy.runTrial(theSet1);   // run the particular strategy if uses set 1...
+					}
+					else if(strategy.getStrategyName() == "P2" || 
+							strategy.getStrategyName() == "P3" ||
+							strategy.getStrategyName() == "P4")
+						strategy.runTrial(theSet2);	// run the particular strategy if uses set 2
 					
 					long endTime = System.nanoTime(); // System.currentTimeMillis();    // time after
 
