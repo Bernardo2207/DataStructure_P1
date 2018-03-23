@@ -19,11 +19,12 @@ import dataGenerator.DataGenerator;
  *
  */
 public class ExperimentController{
-	
-	private int initialSize;           // initial size to be tested
-	private int repetitionsPerSize;    // experimental repetitions per size
-	private int incrementalSizeStep;   // change of sizes (size delta)
-	private int finalSize;             // last size to be tested
+	private int n=10;
+	private int m=50;
+	private int initialSize=1000;           // initial size to be tested
+	private int repetitionsPerSize=200;    // experimental repetitions per size
+	private int incrementalSizeStep=100;   // change of sizes (size delta)
+	private int finalSize=50000;             // last size to be tested
 	
 	private ArrayList<StrategiesTimeCollection<Integer>> resultsPerStrategy; 
 	// The i-th position will contain a particular strategy being tested. 
@@ -61,7 +62,8 @@ public class ExperimentController{
 			for (int r = 0; r<repetitionsPerSize; r++) {
 				// The following will be the common dataset to be used in the current 
 				// trial by all the strategies being tested.
-				Integer[] data = generateData(size);  
+				Integer[][][] data = generateData(size);  
+				
 				
 				// Apply each one of the strategies being tested using the previous 
 				// dataset (of size size) as input; and, for each, estimate the time
@@ -71,7 +73,7 @@ public class ExperimentController{
 					// no modification of it is done in the process...
 					long startTime = System.nanoTime(); // System.currentTimeMillis();   // time before
 
-					strategy.runTrial(data.clone());   // run the particular strategy...
+				//	strategy.runTrial(data.clone());   // run the particular strategy...
 					
 					long endTime = System.nanoTime(); // System.currentTimeMillis();    // time after
 
@@ -93,16 +95,16 @@ public class ExperimentController{
 		}
 	}
 	
-	private Integer[] generateData(int size) {
-		DataGenerator dg = new DataGenerator(size);
-		Integer[] data = dg.generateData();  
+	private Integer[][][] generateData(int size) {
+		DataGenerator dg = new DataGenerator(20,20,size);
+		Integer[][][] data = (Integer[][][])dg.generateData();  
 
 		return data;
 	}
 
 	public void saveResults() throws FileNotFoundException { 
 		
-		PrintStream out = new PrintStream(new File("experimentalResults", "testing"));
+		PrintStream out = new PrintStream(new File("experimentalResults", "allResults.txt"));
 		out.print("Size");
 		for (StrategiesTimeCollection<Integer> trc : resultsPerStrategy) 
 			out.print("\t" + trc.getStrategyName()); 
