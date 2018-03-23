@@ -25,9 +25,9 @@ public class Part2Main {
 		
 		/**/	
 	    ec.addStrategy(new StrategiesTimeCollection<Integer>(new P1AndP2Solution<Integer>("P1")));
-//		ec.addStrategy(new StrategiesTimeCollection<Integer>(new SelectionSortSorter<Integer>()));
-//		ec.addStrategy(new StrategiesTimeCollection<Integer>(new InsertionSortSorter<Integer>()));
-//		ec.addStrategy(new StrategiesTimeCollection<Integer>(new HeapSortSorter<Integer>()));
+	    ec.addStrategy(new StrategiesTimeCollection<Integer>(new P1AndP2Solution<Integer>("P2")));
+	    ec.addStrategy(new StrategiesTimeCollection<Integer>(new P3Solution<Integer>("P3")));
+	    ec.addStrategy(new StrategiesTimeCollection<Integer>(new P4Solution<Integer>("P4")));
 
 		/**/
 

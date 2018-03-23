@@ -26,6 +26,7 @@ String name;
 //	}
 	public StrategiesTimeCollection(IntersectionFinder<Integer> p) {
 		name=p.getName();
+		strategy=p;
 		
 		// TODO Auto-generated constructor stub
 	}

@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import dataGenerator.DataGenerator;
+import dataGenerator.DataReader;
+import interfaces.MySet;
 
 /**
  * This class represents an object data type that is able to carry the 
@@ -62,8 +64,31 @@ public class ExperimentController{
 			for (int r = 0; r<repetitionsPerSize; r++) {
 				// The following will be the common dataset to be used in the current 
 				// trial by all the strategies being tested.
-				Integer[][][] data = generateData(size);  
+				//Integer[][][] data = generateData(size);  
+				DataGenerator x= new DataGenerator(n,m,size);
 				
+				
+				Integer[][][] fData= (Integer[][][])x.generateData();
+				
+				MySet<Integer>[] theSet1= new MySet[m];
+				MySet<Integer>[] theSet2= new MySet[m];
+				
+				Set1<Integer> theUnion1;
+				Set2<Integer> theUnion2;
+				
+				
+				for(int j=0;j<fData[0].length;j++) {
+					theUnion2= new Set2<Integer>();
+					theUnion1= new Set1<Integer>();
+					for(int i=0;i<fData.length;i++) {
+						for(int k=0;k<fData[i][j].length;k++) {					
+							theUnion1.add(fData[i][j][k]);
+							theUnion2.add(fData[i][j][k]);
+						}
+					}
+					theSet1[j]=theUnion1;
+					theSet2[j]=theUnion2;
+				}
 				
 				// Apply each one of the strategies being tested using the previous 
 				// dataset (of size size) as input; and, for each, estimate the time
@@ -73,7 +98,7 @@ public class ExperimentController{
 					// no modification of it is done in the process...
 					long startTime = System.nanoTime(); // System.currentTimeMillis();   // time before
 
-				//	strategy.runTrial(data.clone());   // run the particular strategy...
+					strategy.runTrial(theSet1);   // run the particular strategy...
 					
 					long endTime = System.nanoTime(); // System.currentTimeMillis();    // time after
 
