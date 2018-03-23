@@ -20,28 +20,24 @@ public class Part1Main {
 		DataReader rd= new DataReader();
 		Integer[][][] fData= (Integer[][][])rd.readDataFiles();
 		
-		MySet<Integer>[] theSet1= new MySet[rd.getM()*rd.getN()];
-		MySet<Integer>[] theSet2= new MySet[rd.getM()*rd.getN()];
+		MySet<Integer>[] theSet1= new MySet[rd.getM()];
+		MySet<Integer>[] theSet2= new MySet[rd.getM()];
 		
 		Set1<Integer> theUnion1;
 		Set2<Integer> theUnion2;
-		int h=0;
+		
 		
 		for(int j=0;j<fData[0].length;j++) {
-			
+			theUnion2= new Set2<Integer>();
+			theUnion1= new Set1<Integer>();
 			for(int i=0;i<fData.length;i++) {
-				theUnion2= new Set2<Integer>();
-				theUnion1= new Set1<Integer>();
-				for(int k=0;k<fData[i][j].length;k++) {
-					
+				for(int k=0;k<fData[i][j].length;k++) {					
 					theUnion1.add(fData[i][j][k]);
 					theUnion2.add(fData[i][j][k]);
 				}
-				theSet1[h]=theUnion1;
-				theSet2[h]=theUnion2;
-				h++;
 			}
-			
+			theSet1[j]=theUnion1;
+			theSet2[j]=theUnion2;
 		}
 
 		
@@ -50,7 +46,7 @@ public class Part1Main {
 		
 		
 		//-----------------Make p1 and p2,p3 and p4 solutions----------------------
-				P1AndP2Solution P1orP2; 
+				P1AndP2Solution<Integer> P1orP2; 
 				P3Solution p3 = new P3Solution("P3");
 				P4Solution p4 = new P4Solution("P4");
 				
@@ -60,10 +56,8 @@ public class Part1Main {
 				case 1:
 					//sysout for testing purpose
 					System.out.println("Execute p1");
-					Set1<Integer> x =new Set1<>();
 					P1orP2 = new P1AndP2Solution("P1");
-					System.out.println(theSet1[40]);
-					P1orP2.intersectSets(theSet1);
+					System.out.println(P1orP2.intersectSets(theSet1));
 					break;
 				case 2:
 					System.out.println("Execute p2 ");
@@ -72,7 +66,7 @@ public class Part1Main {
 					break;
 				case 3:
 				    System.out.println("Execute p3");
-					p3.intersectSets(theSet2);
+					System.out.println(p3.intersectSets(theSet2).toString());
 					break;
 					
 				case 4:

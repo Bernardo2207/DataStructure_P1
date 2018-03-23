@@ -1,5 +1,5 @@
 package p1MainClasses;
-import javax.swing.text.html.HTMLDocument.Iterator;
+import java.util.Iterator;
 
 import interfaces.MySet;
 import mySetImplementations.Set1;
@@ -19,18 +19,21 @@ public class P1AndP2Solution<E> extends AbstractIntersectionFinder<E> {
 		//Part1Main.list
 		
 		MySet<E> testSet;
+		
 				if(this.getName() == "P1")
 					testSet = new Set1<E>();
 				else if(this.getName() == "P2")
 					testSet = new Set2<E>();
 				testSet = t[0];
-				for(int i = 1; i < t.length; i++){
-					for(E e: testSet){
-						if(!(t[i].contains((E) e))){
-							testSet.remove(e);
-						}
-					}
+				//Iterator<E> x= new Iterator<>();
+				Iterator<E> it=testSet.iterator();
+				
+				for(int i=0;i<t.length;i++) {
+				while((it).hasNext()) {
+					if(!t[i].contains(it.next())) {
+						it.remove();}}
 				}
+
 		      return testSet;
 }
 		
