@@ -18,13 +18,19 @@ public class P3Solution<E> extends AbstractIntersectionFinder<E> {
 	public MySet<E> intersectSets(MySet<E>[] t) {
 		// TODO Auto-generated method stub
 
-for(MySet<E> values:t) {
-	if(values!=null) {
-	Iterator<E> it= values.iterator();
-	while(it.hasNext()) {
-		allElements.add(it.next());
-	}}
-}
+		for(int k=0;k<t.length;k++) {
+			for(E x:t[k]) {
+				allElements.add(x);
+			}
+		}
+	
+//for(MySet<E> values:t) {
+//	//if(values!=null) {
+//	Iterator<E> it= values.iterator();
+//	while(it.hasNext()) {
+//		allElements.add(it.next());
+//	}
+//}
 		System.out.println(t.length);
 		allElements.sort(null); 		
 		MySet<E> t1 = new Set2();  // sets in P3's solution are of type Set2

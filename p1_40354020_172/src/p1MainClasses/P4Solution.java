@@ -20,12 +20,17 @@ public class P4Solution<E> extends AbstractIntersectionFinder<E> {
 	public MySet<E> intersectSets(MySet<E>[] t) {
 		// TODO Auto-generated method stub
 		
-		for(MySet<E> values:t) {
-			if(values!=null) {
-			Iterator<E> it= values.iterator();
-			while(it.hasNext()) {
-				allElements.add(it.next());
-			}}
+//		for(MySet<E> values:t) {
+//			if(values!=null) {
+//			Iterator<E> it= values.iterator();
+//			while(it.hasNext()) {
+//				allElements.add(it.next());
+//			}}
+//		}
+		for(int k=0;k<t.length;k++) {
+			for(E x:t[k]) {
+				allElements.add(x);
+			}
 		}
 		
 		HashMap<E, Integer> map = new HashMap<>(); 
