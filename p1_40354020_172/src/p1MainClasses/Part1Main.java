@@ -71,7 +71,7 @@ public class Part1Main {
 					
 				case 4:
 					System.out.println("Execute p4");
-					p4.intersectSets(theSet2);
+					System.out.println(p4.intersectSets(theSet2).toString());
 					break;
 					
 				default:
