@@ -21,7 +21,7 @@ public class Part2Main {
 		// Parm2: final size to consider
 		// Parm3: incremental steps (size)
 		// Parm4: trials per size
-		ExperimentController ec = new ExperimentController(parms[0], parms[1], parms[2], parms[3]); 
+		ExperimentController ec = new ExperimentController(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]), Integer.parseInt(args[3]),Integer.parseInt(args[4]),Integer.parseInt(args[5])); 
 		
 		/**/	
 	    ec.addStrategy(new StrategiesTimeCollection<Integer>(new P1AndP2Solution<Integer>("P1")));
