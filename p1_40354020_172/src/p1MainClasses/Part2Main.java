@@ -1,3 +1,6 @@
+//Bernardo Jr. Sein Acevedo
+//844-14-8646
+//Section 030
 package p1MainClasses;
 
 import java.io.FileNotFoundException;
@@ -8,7 +11,7 @@ import mySetImplementations.StrategiesTimeCollection;
 public class Part2Main {
 
 							     //n m isize fsize istep rep
-	private static int[] parms = {10, 15, 100, 100000,3000,10};
+	private static int[] parms = {10, 50, 1000, 50000,1000,200};
 	// min size, max size, size increment, number of trials per size/strategy
 	
 	public static void main(String[] args) throws CloneNotSupportedException {

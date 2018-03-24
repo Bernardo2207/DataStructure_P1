@@ -1,3 +1,6 @@
+//Bernardo Jr. Sein Acevedo
+//844-14-8646
+//Section 030
 package p1MainClasses;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

@@ -2,7 +2,9 @@ package mySetImplementations;
 
 import java.util.ArrayList;
 import java.util.Map;
-
+//Bernardo Jr. Sein Acevedo
+//844-14-8646
+//Section 030
 import interfaces.IntersectionFinder;
 import interfaces.MySet;
 import p1MainClasses.P1AndP2Solution;

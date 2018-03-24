@@ -1,3 +1,6 @@
+//Bernardo Jr. Sein Acevedo
+//844-14-8646
+//Section 030
 package p1MainClasses;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,11 +30,12 @@ public class P4Solution<E> extends AbstractIntersectionFinder<E> {
 		}
 		//Initializes HashaMap map to store elements and its frequency.
 		HashMap<E, Integer> map = new HashMap<>(); 
-		
+		//if the value is present in that set, increase its frequency.
 		for (E e : allElements) { 
 		     Integer c = map.getOrDefault(e, 0); 
 		     map.put(e, c+1); 
 		}
+		//if the frequency matches the amount of sets , add it to the final set.
 		MySet<E> t2 = new Set2<>(); 
 		for (Map.Entry<E, Integer> entry : map.entrySet())
 		     if (entry.getValue() == t.length) 
