@@ -35,8 +35,8 @@ public class ExperimentController{
 	// the strategy at that position. 
 	
 	public ExperimentController(int In, int Im, int is, int fs, int iss, int rps) { 
-		n = in;
-		m = im;
+		n = In;
+		m = Im;
 		initialSize = is; 
 		repetitionsPerSize = rps; 
 		incrementalSizeStep = iss; 
