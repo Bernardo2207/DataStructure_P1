@@ -18,7 +18,7 @@ public class Part2Main {
 			parms[i] = Integer.parseInt(args[i]); 
 		
 		// Parm1: initial size
-		// Parm2: final size to consider
+		// Parm2: final size to consider.
 		// Parm3: incremental steps (size)
 		// Parm4: trials per size
 		ExperimentController ec = new ExperimentController(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]), Integer.parseInt(args[3]),Integer.parseInt(args[4]),Integer.parseInt(args[5])); 

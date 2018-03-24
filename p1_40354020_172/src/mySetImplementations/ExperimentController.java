@@ -34,7 +34,7 @@ public class ExperimentController{
 	// pairs (n, t), where t is the estimated time for size n for
 	// the strategy at that position. 
 	
-	public ExperimentController(int in, int im, int is, int fs, int iss, int rps) { 
+	public ExperimentController(int In, int Im, int is, int fs, int iss, int rps) { 
 		n = in;
 		m = im;
 		initialSize = is; 
