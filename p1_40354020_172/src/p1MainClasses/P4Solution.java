@@ -12,27 +12,20 @@ public class P4Solution<E> extends AbstractIntersectionFinder<E> {
 	private ArrayList<E>allElements;
 	public P4Solution(String name) {
 		super(name);
+		//Initialize ArrayList to contain AllElements in the set
 		allElements=new ArrayList<>();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	@Override
 	public MySet<E> intersectSets(MySet<E>[] t) {
-		// TODO Auto-generated method stub
-		
-//		for(MySet<E> values:t) {
-//			if(values!=null) {
-//			Iterator<E> it= values.iterator();
-//			while(it.hasNext()) {
-//				allElements.add(it.next());
-//			}}
-//		}
+		//Adds al ellements in t[i] to the ArrayList allElements.
 		for(int k=0;k<t.length;k++) {
 			for(E x:t[k]) {
 				allElements.add(x);
 			}
 		}
-		
+		//Initializes HashaMap map to store elements and its frequency.
 		HashMap<E, Integer> map = new HashMap<>(); 
 		
 		for (E e : allElements) { 
@@ -41,7 +34,7 @@ public class P4Solution<E> extends AbstractIntersectionFinder<E> {
 		}
 		MySet<E> t2 = new Set2<>(); 
 		for (Map.Entry<E, Integer> entry : map.entrySet())
-		     if (entry.getValue() == 50) 
+		     if (entry.getValue() == t.length) 
 		        t2.add(entry.getKey());
 
 		return t2;

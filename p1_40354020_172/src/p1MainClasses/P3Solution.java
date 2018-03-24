@@ -16,22 +16,13 @@ public class P3Solution<E> extends AbstractIntersectionFinder<E> {
 
 	@Override
 	public MySet<E> intersectSets(MySet<E>[] t) {
-		// TODO Auto-generated method stub
-
+		
 		for(int k=0;k<t.length;k++) {
 			for(E x:t[k]) {
 				allElements.add(x);
 			}
 		}
-	
-//for(MySet<E> values:t) {
-//	//if(values!=null) {
-//	Iterator<E> it= values.iterator();
-//	while(it.hasNext()) {
-//		allElements.add(it.next());
-//	}
-//}
-		System.out.println(t.length);
+
 		allElements.sort(null); 		
 		MySet<E> t1 = new Set2();  // sets in P3's solution are of type Set2
 		E e = allElements.get(0); 
@@ -40,13 +31,13 @@ public class P3Solution<E> extends AbstractIntersectionFinder<E> {
 		    if (allElements.get(i).equals(e)) {
 		       c++;}
 		    else { 
-		       if (c == 50) 
+		       if (c == t.length) 
 		          t1.add(e);    // m is as in the previous discussion
 		       e = allElements.get(i); 
 		       c = 1; 
 		    } 
 		}
-		if (c == 50)
+		if (c == t.length)
 		    t1.add(allElements.get(allElements.size()-1));
 
 		return t1;

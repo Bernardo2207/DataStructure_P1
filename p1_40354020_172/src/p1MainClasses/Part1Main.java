@@ -12,10 +12,6 @@ public class Part1Main {
 
 
 	public static void main(String[] args) throws FileNotFoundException {
-		//n es el numero de companys
-		//m numero de crimes en la investigacion
-		//Crear un set para cada crime j.
-		
 		
 		DataReader rd= new DataReader();
 		Integer[][][] fData= (Integer[][][])rd.readDataFiles();
@@ -26,7 +22,7 @@ public class Part1Main {
 		Set1<Integer> theUnion1;
 		Set2<Integer> theUnion2;
 		
-		
+		//Creates the MySet<E> for the Solutions to intersect.
 		for(int j=0;j<fData[0].length;j++) {
 			theUnion2= new Set2<Integer>();
 			theUnion1= new Set1<Integer>();
@@ -40,10 +36,6 @@ public class Part1Main {
 			theSet2[j]=theUnion2;
 		}
 
-		
-		P1AndP2Solution p1= new P1AndP2Solution("P2");
-		//p1.intersectSets(theSet2);
-		
 		
 		//-----------------Make p1 and p2,p3 and p4 solutions----------------------
 				P1AndP2Solution<Integer> P1orP2; 
@@ -62,7 +54,7 @@ public class Part1Main {
 				case 2:
 					System.out.println("Execute p2 ");
 					P1orP2 = new P1AndP2Solution("P2");
-					P1orP2.intersectSets(theSet2);
+					System.out.println(P1orP2.intersectSets(theSet2));
 					break;
 				case 3:
 				    System.out.println("Execute p3");
@@ -86,8 +78,8 @@ public class Part1Main {
 	}
 
 	
-	public void showFinalSet() {
-		
-	}
+//	public void showFinalSet() {
+//		
+//	}
 	
 }

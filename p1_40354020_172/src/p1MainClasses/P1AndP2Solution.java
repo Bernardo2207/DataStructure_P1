@@ -7,9 +7,10 @@ import mySetImplementations.Set2;
 import setIntersectionFinders.AbstractIntersectionFinder;
 
 public class P1AndP2Solution<E> extends AbstractIntersectionFinder<E> {
-	
+	MySet<E> testSet;
 	public P1AndP2Solution(String name) {
 		super(name);
+		
 		// TODO Auto-generated constructor stub
 	}
 
@@ -18,21 +19,32 @@ public class P1AndP2Solution<E> extends AbstractIntersectionFinder<E> {
 		// TODO Auto-generated method stub
 		//Part1Main.list
 		
-		MySet<E> testSet;
 		
-				if(this.getName() == "P1")
-					testSet = new Set1<E>();
-				else if(this.getName() == "P2")
-					testSet = new Set2<E>();
-				testSet = t[0];
-				//Iterator<E> x= new Iterator<>();
-				Iterator<E> it=testSet.iterator();
-				
-				for(int i=0;i<t.length;i++) {
-				while((it).hasNext()) {
-					if(!t[i].contains(it.next())) {
-						it.remove();}}
+//		
+//				if(this.getName() == "P1")
+//					testSet = new Set1<E>();
+//				else if(this.getName() == "P2")
+//					testSet = new Set2<E>();
+//				
+				try {
+					testSet = (MySet<E>)t[0].clone();
+				} catch (CloneNotSupportedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
+				//Iterator<E> x= new Iterator<>();
+				
+				
+				for(int i=0;i<t.length;i++) 
+					for(E x:t[0]) {
+						if(!t[i].contains(x)) {
+							testSet.remove(x);
+						}
+					}
+//				while((it).hasNext()) {
+//					if(!t[i].contains(it.next())) {
+//						it.remove();}}
+//				}
 
 		      return testSet;
 }
