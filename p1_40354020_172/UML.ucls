@@ -3,7 +3,7 @@
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="dataGenerator.DataGenerator" project="p1_40354020_172" 
     file="/p1_40354020_172/src/dataGenerator/DataGenerator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="387" width="151" x="285" y="-24"/>    
+    <position height="387" width="151" x="407" y="18"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="p1MainClasses.FilesGeneratorMain" project="p1_40354020_172" 
     file="/p1_40354020_172/src/p1MainClasses/FilesGeneratorMain.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="161" x="476" y="-24"/>    
+    <position height="117" width="161" x="598" y="18"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="p1MainClasses.P4Solution" project="p1_40354020_172" 
     file="/p1_40354020_172/src/p1MainClasses/P4Solution.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="740" y="358"/>    
+    <position height="117" width="203" x="970" y="445"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -31,148 +31,182 @@
   <class id="4" language="java" name="setIntersectionFinders.AbstractIntersectionFinder" project="p1_40354020_172" 
     file="/p1_40354020_172/src/setIntersectionFinders/AbstractIntersectionFinder.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="944" y="154"/>    
+    <position height="117" width="200" x="1480" y="18"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="p1MainClasses.P3Solution" project="p1_40354020_172" 
+  <class id="5" language="java" name="mySetImplementations.ExperimentController" project="p1_40354020_172" 
+    file="/p1_40354020_172/src/mySetImplementations/ExperimentController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="278" x="1720" y="18"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="p1MainClasses.P3Solution" project="p1_40354020_172" 
     file="/p1_40354020_172/src/p1MainClasses/P3Solution.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="925" y="476"/>    
+    <position height="117" width="203" x="1456" y="445"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="6" language="java" name="interfaces.MySet" project="p1_40354020_172" 
+  <interface id="7" language="java" name="interfaces.MySet" project="p1_40354020_172" 
     file="/p1_40354020_172/src/interfaces/MySet.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1261" y="75"/>    
+    <position height="225" width="123" x="1039" y="836"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="7" language="java" name="p1MainClasses.Part1Main" project="p1_40354020_172" 
+  <class id="8" language="java" name="p1MainClasses.Part1Main" project="p1_40354020_172" 
     file="/p1_40354020_172/src/p1MainClasses/Part1Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="714" y="46"/>    
+    <position height="99" width="113" x="799" y="18"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="dataGenerator.DataReader" project="p1_40354020_172" 
+  <class id="9" language="java" name="dataGenerator.DataReader" project="p1_40354020_172" 
     file="/p1_40354020_172/src/dataGenerator/DataReader.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="545" y="255"/>    
+    <position height="243" width="152" x="952" y="18"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="p1MainClasses.P1AndP2Solution" project="p1_40354020_172" 
+  <class id="10" language="java" name="p1MainClasses.P1AndP2Solution" project="p1_40354020_172" 
     file="/p1_40354020_172/src/p1MainClasses/P1AndP2Solution.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1073" y="357"/>    
+    <position height="99" width="203" x="1213" y="445"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="p1MainClasses.Part2Main" project="p1_40354020_172" 
+  <class id="11" language="java" name="p1MainClasses.Part2Main" project="p1_40354020_172" 
     file="/p1_40354020_172/src/p1MainClasses/Part2Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1470" y="25"/>    
+    <position height="117" width="113" x="1144" y="18"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="mySetImplementations.Set1" project="p1_40354020_172" 
+  <class id="12" language="java" name="mySetImplementations.Set1" project="p1_40354020_172" 
     file="/p1_40354020_172/src/mySetImplementations/Set1.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1237" y="575"/>    
+    <position height="225" width="137" x="675" y="836"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="mySetImplementations.Set2" project="p1_40354020_172" 
+  <class id="13" language="java" name="mySetImplementations.Set2" project="p1_40354020_172" 
     file="/p1_40354020_172/src/mySetImplementations/Set2.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1408" y="571"/>    
+    <position height="207" width="147" x="852" y="836"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="testerClasses.DataGeneratorTester" project="p1_40354020_172" 
+  <class id="14" language="java" name="mySetImplementations.StrategiesTimeCollection" project="p1_40354020_172" 
+    file="/p1_40354020_172/src/mySetImplementations/StrategiesTimeCollection.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="351" width="282" x="1720" y="445"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="testerClasses.DataGeneratorTester" project="p1_40354020_172" 
     file="/p1_40354020_172/src/testerClasses/DataGeneratorTester.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="543" y="423"/>    
+    <position height="99" width="143" x="1297" y="18"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="mySetImplementations.AbstractMySet" project="p1_40354020_172" 
+  <class id="16" language="java" name="mySetImplementations.AbstractMySet" project="p1_40354020_172" 
     file="/p1_40354020_172/src/mySetImplementations/AbstractMySet.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1268" y="300"/>    
+    <position height="189" width="133" x="797" y="445"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="15" language="java" name="interfaces.IntersectionFinder" project="p1_40354020_172" 
+  <interface id="17" language="java" name="interfaces.IntersectionFinder" project="p1_40354020_172" 
     file="/p1_40354020_172/src/interfaces/IntersectionFinder.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="941" y="10"/>    
+    <position height="99" width="203" x="1680" y="836"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="16" language="java" name="mySetImplementations.StrategiesTimeCollection" project="p1_40354020_172" 
-    file="/p1_40354020_172/src/mySetImplementations/StrategiesTimeCollection.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1490" y="266"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <realization id="17">    
+  <realization id="18">    
+    <bendpoint x="1689" y="445"/>    
     <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="15"/>  
+    <end type="TARGET" refId="17"/>  
   </realization>  
-  <generalization id="18">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="14"/>  
-  </generalization>  
-  <generalization id="19">    
-    <end type="SOURCE" refId="9"/>    
+  <association id="19">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="20" name="resultsPerStrategy"/>      
+      <multiplicity id="21" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="22">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="23" name="testSet"/>      
+      <multiplicity id="24" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="25">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="26" name="strategy"/>      
+      <multiplicity id="27" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
-  <generalization id="20">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="14"/>  
-  </generalization>  
-  <generalization id="21">    
+  <generalization id="29">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
-  <realization id="22">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="6"/>  
-  </realization>  
-  <generalization id="23">    
-    <end type="SOURCE" refId="5"/>    
+  <generalization id="30">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <generalization id="31">    
+    <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <realization id="32">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <generalization id="33">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="16"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
